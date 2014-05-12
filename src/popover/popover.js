@@ -17,7 +17,7 @@ angular.module( 'ui.bootstrap.popover', [ 'ui.bootstrap.tooltip' ] )
 		    element.html(markup);
         $compile(element.contents())(scope);
 			}
-	}
+	  }
   };
 })
 
