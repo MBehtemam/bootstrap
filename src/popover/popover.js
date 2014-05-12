@@ -12,8 +12,8 @@ angular.module( 'ui.bootstrap.popover', [ 'ui.bootstrap.tooltip' ] )
     scope: { title: '@', content: '@', placement: '@', animation: '&', isOpen: '&',html:'@' },
     templateUrl: 'template/popover/popover.html',
     link:function(scope, element, attrs){
-		  if(scope.html == ture){
-				markup = scope.content;
+		  if(scope.html==ture){
+				markup=scope.content;
 		    element.html(markup);
         $compile(element.contents())(scope);
 			}
