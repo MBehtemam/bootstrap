@@ -9,8 +9,15 @@ angular.module( 'ui.bootstrap.popover', [ 'ui.bootstrap.tooltip' ] )
   return {
     restrict: 'EA',
     replace: true,
-    scope: { title: '@', content: '@', placement: '@', animation: '&', isOpen: '&' },
-    templateUrl: 'template/popover/popover.html'
+    scope: { title: '@', content: '@', placement: '@', animation: '&', isOpen: '&',html:'@' },
+    templateUrl: 'template/popover/popover.html',
+    	link:function(scope, element, attrs){
+			if(scope.html == ture){
+					markup = scope.content;
+		element.html(markup);
+        $compile(element.contents())(scope);
+			}
+	}
   };
 })
 
