@@ -15,7 +15,7 @@ angular.module( 'ui.bootstrap.popover', [ 'ui.bootstrap.tooltip' ] )
     {
       if(scope.html === true)
       {
-        markup=scope.content;
+        var markup=scope.content;
         element.html( markup );
         $compile(element.contents())(scope);
       }
