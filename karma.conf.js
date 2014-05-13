@@ -27,7 +27,7 @@ exclude = [
 // - Safari
 // - PhantomJS
 browsers = [
-  'Chrome'
+  'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe'
 ];
 
 // test results reporter to use

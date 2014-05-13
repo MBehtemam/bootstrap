@@ -13,7 +13,7 @@ angular.module( 'ui.bootstrap.popover', [ 'ui.bootstrap.tooltip' ] )
     templateUrl: 'template/popover/popover.html',
     link:function(scope, element, attrs)
     {
-      if(scope.html == ture)
+      if(scope.html === true)
       {
         markup=scope.content;
         element.html( markup );
